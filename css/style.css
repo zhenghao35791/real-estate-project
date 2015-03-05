@@ -1,0 +1,81 @@
+
+/**/
+html, body, ul, li {padding:0; margin:0;}
+body {font:10px;}
+ul,li {list-style-type:none; text-transform:capitalize;}
+.clear {clear:both; *display:inline;/*IE only*/}
+/***************  headBar_client  */
+.topBar_client{
+    height: 30px;
+    background-color: aqua;
+    line-height: 30px;
+}
+.topBar_left{float: left}
+.topBar_right{float: right}
+.logo_sm{
+    background: url("../images/-1.jpg") left center no-repeat;
+    padding-left: 20px;
+}
+.topBar_client a:hover{color: red;}
+
+/************************** menu  */
+#menu {
+    display:block;
+    height:34px;
+    text-align:center;
+    background-color: #262E52;
+}
+#nav {display:block;}
+#nav .mainlevel {
+    float:left;
+    background-color:#262E52;
+    text-align:center;
+    display:block;
+
+}
+#nav .mainlevel a {
+    color:#fff;
+    text-decoration:none;
+    line-height:34px;
+    height:34px;
+    text-align:center;
+    padding:0 20px;
+    display:block;
+    width: 100px;
+    border-bottom: solid grey 1px;
+}
+#nav .mainlevel a:hover {
+    color:#E90C72;
+    text-decoration:none;
+    background-color: #ffffff;
+}
+#nav .mainlevel ul {
+    position: absolute;
+    display: none;
+}
+#nav .mainlevel li {
+    background-color:#EAEAEA;
+}
+#nav .mainlevel li a {
+    width: 100px;
+    border-bottom: solid grey 1px;
+    color: black;
+    line-height:30px;
+    height:30px;
+    display:block;
+    _padding-bottom:6px;/*IE6 only*/}
+#nav .mainlevel li a:hover {
+    color: #E90C72;
+    text-decoration: none;
+    background-color: #262E52;
+}
+.nav_home {
+    color:#E90C72;
+    background-color: #262E52;
+    display:block;
+    line-height:34px;
+    height: 34px;
+    margin: 0;
+    width: 100px;
+}
+
