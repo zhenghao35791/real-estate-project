@@ -1,25 +1,63 @@
 
 /**/
-html, body, ul, li {padding:0; margin:0;}
-body {font:10px;}
-ul,li {list-style-type:none; text-transform:capitalize;}
-.clear {clear:both; *display:inline;/*IE only*/}
+body {
+    background-color:#010E31;
+}
+ul,li {
+    list-style-type:none;
+    text-transform:capitalize;
+}
+.clear {
+    clear:both;
+    *display:inline;/*IE only*/
+}
+
+/*search*/
+.search_box{ width:230px; padding-right:145px; float:right;}
+.search_text{ width: 150px; height: 30px;  line-height:30px\9; /*css hack  "\9" for IE6 to adjust the height*/ float:left; padding:0 5px; background-color:#FFFFFF;font-weight:normal;}
+.search_btn { width: 40px; height: 30px; line-height: 30px; background-color:#FF8C00; color: white; /* font-color, not backgroundcolor */float:right;font-weight:normal;}
+#login-area{
+    float:right;
+    margin-top:10px;
+    position:relative;
+}
+#learnmore {
+    width:70px;
+    height:30px;
+    font-size:12px;
+    float:right;
+    text-align:center;
+    color:#262E52;
+    line-height:30px;
+    /*background:url("../images/sprit.png") no-repeat scroll 16px -82px #333;*/
+    opacity:.8;
+}
+
+#learnmore:hover {
+    background-color:grey;
+    opacity :1;
+}
+
 /***************  headBar_client  */
 .topBar_client{
-    height: 30px;
-    background-color: aqua;
-    line-height: 30px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    text-decoration: none;
 }
 .topBar_left{float: left}
 .topBar_right{float: right}
-.logo_sm{
-    background: url("../images/-1.jpg") left center no-repeat;
-    padding-left: 20px;
-}
-.topBar_client a:hover{color: red;}
+/*.headBar_logo{*/
+    /*padding-left: 100px;*/
+/*}*/
+.topBar_client a:hover{color: #E90C72;}
 
 /************************** menu  */
 #menu {
+    font-family: "Trebuchet MS",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    z-index: 999;
     display:block;
     height:34px;
     text-align:center;
@@ -27,6 +65,9 @@ ul,li {list-style-type:none; text-transform:capitalize;}
 }
 #nav {display:block;}
 #nav .mainlevel {
+    font-family: "Trebuchet MS",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     float:left;
     background-color:#262E52;
     text-align:center;
@@ -54,20 +95,27 @@ ul,li {list-style-type:none; text-transform:capitalize;}
     display: none;
 }
 #nav .mainlevel li {
+    font-family: "Trebuchet MS",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     background-color:#EAEAEA;
+    /*z-index: 999;*/
 }
 #nav .mainlevel li a {
     width: 100px;
     border-bottom: solid grey 1px;
     color: black;
-    line-height:30px;
-    height:30px;
+    line-height:34px;
+    height:34px;
     display:block;
-    _padding-bottom:6px;/*IE6 only*/}
+    _padding-bottom:6px;/*IE6 only*/
+    /*z-index: 999;*/
+}
 #nav .mainlevel li a:hover {
     color: #E90C72;
     text-decoration: none;
     background-color: #262E52;
+    /*bug1：hover的时候一阶的项目 没有保持白色。如何让低阶的hover控制除了它以外的对象？*/
 }
 .nav_home {
     color:#E90C72;
@@ -78,4 +126,31 @@ ul,li {list-style-type:none; text-transform:capitalize;}
     margin: 0;
     width: 100px;
 }
+/******************banner*/
+.banner{
+    position: relative;
+    z-index: -1;
+}
+
+.pic img{
+    width: 100%;
+}
+.previous_btn{
+    background: url("../images/previous.png") left center no-repeat;
+    position: absolute;
+    top:50%;
+    left:10%;
+    width: 50px;
+    height: 50px;
+
+}
+.next_btn{
+    background: url("../images/next.png") left center no-repeat;
+    position: absolute;
+    top:50%;
+    left:70%;
+    width: 50px;
+    height: 50px;
+}
+
 

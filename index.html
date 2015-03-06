@@ -5,31 +5,29 @@
     <title>index.html</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
-    <script language="javascript" type="text/javascript">
-        $(document).ready(function () {
 
-            $('li.mainlevel').mousemove(function () {
-                $(this).find('ul').slideDown("1000"); //you can give it a speed
-            });
-            $('li.mainlevel').mouseleave(function () {
-                $(this).find('ul').slideUp("fast");
-            });
-
-        });
-    </script>
 </head>
 <body>
     <div class = "headBar_client">
         <div class = "topBar_client">
             <div class = "topBar_left">
-                <a href="" class="logo_sm">THE AVENUE PROPERTY GROUP</a>
+                <a href="" class="logo_words">THE AVENUE PROPERTY GROUP<img class="headBar_logo" src="images/logo.jpg" alt="logo_1"/> </a>
             </div>
             <div class = "topBar_right">
-                <a href="" class="login">[login: ]</a>
-                <a href="" class="register">[register: ]</a>
+                <div id="login-area">
+                    <button  hidefocus="true" id="learnmore">register</button>
+                    <button  hidefocus="true" id="learnmore">register</button>
+                </div>
+            </div>
+            <div class = "search_box">
+                <input type = "text" class = "search_text">
+                <a href = "?"><input type="button" value = "SEARCH" class = "search_btn"></a>
             </div>
         </div>
     </div>
+    <!--<div style="padding-top: 150px"></div>-->
+
+
 
     <div id="menu">
         <ul id="nav">
@@ -51,9 +49,75 @@
             <li class="mainlevel"><a href="#">RENTING</a></li>
             <li class="mainlevel"><a href="#">TEAM</a></li>
             <li class="mainlevel"><a href="#">ABOUT US</a></li>
-            <li class="mainlevel"><a href="#">CONTACT US</a></li>
+            <li class="mainlevel"><a href="#">CONTACT US</a>
+                <ul class="sub_nav_01">
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">JQuery</a></li>
+                    <li><a href="#">HTML</a></li>
+                </ul>
+            </li>
+
         </ul>
     </div>
 
+    <!--<div style="padding-top: 70px"></div>-->
+
+
+    <div class="banner">
+        <div class="pic">
+            <a href="#" >
+                <img src="images/banner/ad1.jpg" class="adbanner"/>
+            </a>
+            <!--two buttons on the banner-->
+            <div class="banner_btns">
+                <a href="" class="previous_btn">P</a>
+                <a href="" class="next_btn">N</a>
+            </div>
+        </div>
+
+    </div>
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $('li.mainlevel').mousemove(function () {
+                $(this).find('ul').slideDown("1000"); //you can give it a speed
+            });
+            $('li.mainlevel').mouseleave(function () {
+                $(this).find('ul').slideUp("fast");
+            });
+        });
+    </script>
+
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            var mypic =  ["images/banner/ad1.jpg","images/banner/ad2.jpg","images/banner/ad3.jpg","images/banner/ad4.jpg"];
+            var thisad = 0;
+            var timer = null;
+            timer = setInterval(autoplay,2000);
+
+//            $('.previous_btn').bind("click", function (){
+//                console.log("click");
+//                console.log(mypic.length);
+//                thisad++;
+//                console.log(thisad);
+//                if(thisad == mypic.length){
+//                    thisad = 0;
+//                }
+//                showImg(thisad);
+//            });
+
+
+            function autoplay(){
+                thisad++;
+                if(thisad == mypic.length){
+                    thisad = 0;
+                }
+                showImg(thisad);
+            }
+
+            function showImg( idx ){
+                $('.adbanner').attr("src",mypic[idx]);
+            }
+        })
+    </script>
 </body>
 </html>
