@@ -4,24 +4,27 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>index.html</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">
+    <!--<link type="text/css" href="css/hover.css" rel="stylesheet">-->
     <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
-
 </head>
 <body>
     <div class = "headBar_client">
         <div class = "topBar_client">
             <div class = "topBar_left">
-                <a href="" class="logo_words">THE AVENUE PROPERTY GROUP<img class="headBar_logo" src="images/logo.jpg" alt="logo_1"/> </a>
+                <a href="" class="logo_words">THE AVENUE PROPERTY GROUP<img class="headBar_logo" src="images/1.png" alt="logo_1"/> </a>
             </div>
             <div class = "topBar_right">
                 <div id="login-area">
-                    <button  hidefocus="true" id="learnmore">register</button>
-                    <button  hidefocus="true" id="learnmore">register</button>
+                    <input type="button" class="register_btn" name="register" value="register">
+                    <input type="button" class="register_btn" name="login" value="login"/>
                 </div>
             </div>
-            <div class = "search_box">
-                <input type = "text" class = "search_text">
-                <a href = "?"><input type="button" value = "SEARCH" class = "search_btn"></a>
+
+            <div class="search-box">
+                <form class="search-form" action="https://cn.bing.com/search" target="_blank">
+                    <input type="text" class="search-text" name="q"/>
+                    <input type="submit" class="search-button" value=""/>
+                </form>
             </div>
         </div>
     </div>
@@ -30,8 +33,8 @@
 
 
     <div id="menu">
-        <ul id="nav">
-            <li class="mainlevel"><a href=""><span class="nav_home">HOME</span></a></li>
+        <ul id="nav" class="clearfix">
+            <li class="mainlevel nav_home"><a href="">HOME</a></li>
             <li class="mainlevel" id="mainlevel_01"><a href="#">BUYING</a>
                 <ul class="sub_nav_01">
                     <li><a href="#">Development</a></li>
@@ -46,9 +49,27 @@
                     <li><a href="#">HTML</a></li>
                 </ul>
             </li>
-            <li class="mainlevel"><a href="#">RENTING</a></li>
-            <li class="mainlevel"><a href="#">TEAM</a></li>
-            <li class="mainlevel"><a href="#">ABOUT US</a></li>
+            <li class="mainlevel"><a href="#">RENTING</a>
+                <ul class="sub_nav_01">
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">JQuery</a></li>
+                    <li><a href="#">HTML</a></li>
+                </ul>
+            </li>
+            <li class="mainlevel"><a href="#">TEAM</a>
+                <ul class="sub_nav_01">
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">JQuery</a></li>
+                    <li><a href="#">HTML</a></li>
+                </ul>
+            </li>
+            <li class="mainlevel"><a href="#">ABOUT US</a>
+                <ul class="sub_nav_01">
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">JQuery</a></li>
+                    <li><a href="#">HTML</a></li>
+                </ul>
+            </li>
             <li class="mainlevel"><a href="#">CONTACT US</a>
                 <ul class="sub_nav_01">
                     <li><a href="#">JavaScript</a></li>
@@ -59,6 +80,7 @@
 
         </ul>
     </div>
+
 
     <!--<div style="padding-top: 70px"></div>-->
 
@@ -74,8 +96,45 @@
                 <a href="" class="next_btn">N</a>
             </div>
         </div>
-
     </div>
+
+    <div class="products_part ">
+        <div product_list>
+            <div class="product" id="product1">
+                <img src="images/product_1.png">
+                <a href="#" class="hvr-underline-from-center"><span>poduct1</span><br/>
+                    <span>descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptionde</span>
+                    <span>descriptiondescriptiondescriptiondescription</span>
+                </a>
+            </div>
+            <div class="product" id="product1">
+                <img src="images/product_1.png">
+                <a href="#" class="hvr-underline-from-center"><span>poduct1</span><br/>
+                    <span>descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptionde</span>
+                    <span>descriptiondescriptiondescriptiondescription</span>
+                </a>
+            </div>
+
+            <div class="product" id="product1">
+                <img src="images/product_1.png">
+                <a href="#" class="hvr-underline-from-center"><span>poduct1</span><br/>
+                    <span>descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptionde</span>
+                    <span>descriptiondescriptiondescriptiondescription</span>
+                </a>
+            </div>
+
+            <div class="product" id="product1">
+                <img src="images/product_1.png">
+                <a href="#" class="hvr-underline-from-center"><span>poduct1</span><br/>
+                    <span>descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptionde</span>
+                    <span>descriptiondescriptiondescriptiondescription</span>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+
     <script language="javascript" type="text/javascript">
         $(document).ready(function () {
             $('li.mainlevel').mousemove(function () {
