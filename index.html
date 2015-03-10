@@ -10,24 +10,22 @@
 
 </head>
 <body>
-    <div class = "headBar_client">
-        <div class = "topBar_client">
-            <div class = "topBar_left">
-                <a href="" class="logo_words">THE AVENUE PROPERTY GROUP<img class="headBar_logo" src="images/1.png" alt="logo_1"/> </a>
+    <div class = "topBar_client clearfix">
+        <div class = "topBar_left">
+            <a href="" class="logo_words">THE AVENUE PROPERTY GROUP<img class="headBar_logo" src="images/1.png" alt="logo_1"/> </a>
+        </div>
+        <div class = "topBar_right">
+            <div id="login-area">
+                <input type="button" class="register_btn hvr-bounce-in" name="register" value="">
+                <input type="button" class="login_btn hvr-bounce-in" name="login" value="">
             </div>
-            <div class = "topBar_right">
-                <div id="login-area">
-                    <input type="button" class="register_btn" name="register" value="register">
-                    <input type="button" class="register_btn" name="login" value="login">
-                </div>
-            </div>
+        </div>
 
-            <div class="search-box">
-                <form class="search-form" action="https://cn.bing.com/search" target="_blank">
-                    <input type="text" class="search-text" name="q"/>
-                    <input type="submit" class="search-button" value=""/>
-                </form>
-            </div>
+        <div class="search-box">
+            <form class="search-form" action="https://google.com.au/search" target="_blank">
+                <input type="text" class="search-text" name="" placeholder="Search..."/>
+                <input type="submit" class="search-button hvr-grow-shadow" value=""/>
+            </form>
         </div>
     </div>
     <!--<div style="padding-top: 150px"></div>-->
@@ -248,10 +246,6 @@
                 timer = setInterval(autoplay,2000);
             });
 
-
-
-
-
             function autoplay(){
                 thisad++;
                 if(thisad == mypic.length){
@@ -263,6 +257,14 @@
             function showImg( idx ){
                 $('.adbanner').attr("src",mypic[idx]);
             }
+//            $(".register_btn").mouseenter(function(){
+//                $(this).css("display","none");
+//                $(this).value="register";
+//                $(".register_btn").css("background-color","yellow");
+//            });
+//            $(".register_btn").mouseleave(function(){
+//                $(this).value="";
+//                $(this).css("display","inline-block");
         })
     </script>
 <!--滚动条-->
