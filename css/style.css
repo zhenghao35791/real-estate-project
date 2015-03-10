@@ -601,7 +601,7 @@ button.submit:active {
 .prop{
     width:600px;
     float: left;
-    margin: 10px 6px 10px 6px;
+    margin: -5px 6px -5px 6px;
     display: inline-block;
     /*border: solid 1px grey;*/
 }
@@ -611,32 +611,31 @@ button.submit:active {
     /*float: left;*/
     border: 0;
 }
-.prop a{
-    padding-top: -100px;
+.prop .desc_text a{
+    position: relative;
+    margin-top: -120px;
     z-index: 1;
     font-weight: bold;
-    width: 600px;
+    width: 589px;
     height: 90px;
-    line-height: 30px;
+    line-height: 28px;
     /*float: left;*/
     text-decoration: none;
     font-family: "Trebuchet MS", Arial, sans-serif;
     font-size: 14px;
     color: #ffffff;
     background-color: #262E52;
-    opacity: 0.3;
+    opacity: 0.6;
     border: 0;
+    padding-left: 10px;
 }
-.prop a:hover{
+.prop .desc_text a:hover{
     /*opacity: 0.85;*/
     color: #E90C72;
     background-color: #262E52;
     font-weight: bold;
     opacity: 1;
 
-}
-.product a span{
-    padding-left: 10px;
 }
 
 
@@ -977,7 +976,7 @@ button.submit:active {
     left: 50%;
     right: 50%;
     bottom: 0;
-    background: black;
+    background: #E90C72;
     height: 4px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
@@ -1130,4 +1129,37 @@ button.submit:active {
 .hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
     -webkit-transform: scale(2);
     transform: scale(2);
+}
+/* Curl Top Right */
+.hvr-curl-top-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+.hvr-curl-top-right:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    right: 0;
+    background: white;
+    /* IE9 */
+    background: linear-gradient(225deg, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height;
+}
+.hvr-curl-top-right:hover:before, .hvr-curl-top-right:focus:before, .hvr-curl-top-right:active:before {
+    width: 25px;
+    height: 25px;
 }
