@@ -2,13 +2,13 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>about us</title>
+    <title>contact us</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
     <script src="js/index-public.js"></script>
-
 </head>
 <body>
+<!--head and nav part-->
 <div class = "topBar_client clearfix">
     <div class = "topBar_left">
         <a href="" class="logo_words">THE AVENUE PROPERTY GROUP<img class="headBar_logo" src="images/1.png" alt="logo_1"/> </a>
@@ -31,7 +31,7 @@
 <div id="menu">
     <ul id="nav" class="clearfix">
         <li class="mainlevel nav_home"><a href="index.html" style="color: #E90C72">HOME</a></li>
-        <li class="mainlevel" id="mainlevel_01"><a href="buying.html">BUYING</a>
+        <li class="mainlevel" id="mainlevel_01"><a href="#">BUYING</a>
             <ul class="sub_nav_01">
                 <li><a href="#" class="hvr-sweep-to-right">Development</a></li>
                 <li><a href="#" class="hvr-sweep-to-right">JQuery</a></li>
@@ -66,43 +66,11 @@
 
     </ul>
 </div>
-<div class="clearfix" style="height: 50px"></div>
+<div class="clearfix" style="height: 30px"></div>
+<!--end of head and nav part-->
 
-<div class="about_us clearfix">
-    <div class="about_us_left">
-        <h1>About Us</h1>
-        <p><span>Alice Lee</span></p>
-        <p>
-            Managing Director
-            <br>
-            Licensed Estate Agent
-        </p>
-        <p>
-            <span>M: </span>
-            +61 400 883 288
-            <br>
-            <span>T: </span>
-            +613 9531 5710 |
-            <span>F: </span>
-            +613 9531 5710
-            <br>
-            <a href="mailto:alice@tapg.com.au" class="hvr-wobble-skew">alice@tapg.com.au</a>
-        </p>
-        <p><span>THE AVENUE PROPERTY GROUP</span></p>
-    </div>
-    <div class="about_us_right">
-            <iframe height="400" frameborder="0" width="600" src="https://maps.google.com.au/maps?f=q&source=s_q&hl=en&geocode=&q=Suite+12%2F24+Kingsley+Street+Elwood+VIC+3184&sll=-37.860283,145.079616&sspn=1.496228,2.221985&ie=UTF8&hq=&hnear=12%2F24-26+Kingsley+St,+Elwood+Victoria+3184&t=m&z=14&iwloc=A&ll=-37.888681,144.989593&output=embed"
-                    marginwidth="0" marginheight="0" scrolling="no">
-                <br>
-                <small>
-                    <a style="color:#0000FF;text-align:left" href="https://maps.google.com.au/maps?f=q&source=embed&hl=en&geocode=&q=Suite+12%2F24+Kingsley+Street+Elwood+VIC+3184&sll=-37.860283,145.079616&sspn=1.496228,2.221985&ie=UTF8&hq=&hnear=12%2F24-26+Kingsley+St,+Elwood+Victoria+3184&t=m&z=14&iwloc=A&ll=-37.888681,144.989593">
-                        View Larger Map</a>
-                </small></iframe>
-        <p><span>Address: </span>  Suite 12/24 Kingsley Street Elwood VIC 3184</p>
-        <p><span>PO BOX: </span>12405 A’Beckett Street Melbourne VIC 8006</p>
-    </div>
-</div>
-<div class="clearfix" style="height: 50px"></div>
+
+<div class="clearfix" style="height: 30px"></div>
 
 <!--bottom logo条-->
 <div class="bottom_logo clearfix">
@@ -118,7 +86,7 @@
             <li style="padding-left:17px"><a href="#" class="hvr-wobble-bottom">Terms</a></li>
         </ul>
         <ul>
-            <li class="copyright_head hvr-wobble-horizontal"><a href="#">Buy</a></li>
+            <li class="copyright_head hvr-wobble-horizontal"><a href="buying.html">Buy</a></li>
             <li><a href="#" class="hvr-wobble-bottom">Open for inspection</a></li>
             <li><a href="#" class="hvr-wobble-bottom">Sales</a></li>
         </ul>
@@ -142,17 +110,5 @@
     </div>
 </div>
 <!--end bottom part-->
-
-<script>
-    function initialize() {
-        var mapProp = {
-            center:new google.maps.LatLng(51.508742,-0.120850),
-            zoom:5,
-            mapTypeId:google.maps.MapTypeId.ROADMAP
-        };
-        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 </body>
 </html>

@@ -7,6 +7,8 @@
     <!--<link type="text/css" href="css/hover.css" rel="stylesheet">-->
     <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/index-public.js"></script>
+    <script src="js/index.js"></script>
 
 </head>
 <body>
@@ -28,14 +30,13 @@
             </form>
         </div>
     </div>
-    <!--<div style="padding-top: 150px"></div>-->
 
 
 
     <div id="menu">
         <ul id="nav" class="clearfix">
-            <li class="mainlevel nav_home"><a href="" style="color: #E90C72">HOME</a></li>
-            <li class="mainlevel" id="mainlevel_01"><a href="#">BUYING</a>
+            <li class="mainlevel nav_home"><a href="index.html" style="color: #E90C72">HOME</a></li>
+            <li class="mainlevel" id="mainlevel_01"><a href="buying.html">BUYING</a>
                 <ul class="sub_nav_01">
                     <li><a href="#" class="hvr-sweep-to-right">Development</a></li>
                     <li><a href="#" class="hvr-sweep-to-right">JQuery</a></li>
@@ -199,75 +200,7 @@
 </div>
 
 
-
-
-
-
-
-
-
-    <script language="javascript" type="text/javascript">
-        $(document).ready(function () {
-            $('li.mainlevel').mousemove(function () {
-                $(this).find('ul').slideDown("1000"); //you can give it a speed
-            });
-            $('li.mainlevel').mouseleave(function () {
-                $(this).find('ul').slideUp("fast");
-            });
-        });
-    </script>
-
-    <script language="javascript" type="text/javascript">
-        $(document).ready(function () {
-            var mypic =  ["images/banner/ad1.jpg","images/banner/ad2.jpg","images/banner/ad3.jpg","images/banner/ad4.jpg","images/banner/ad5.jpg"];
-            var thisad = 0;
-            var timer = null;
-            timer = setInterval(autoplay,2000);
-
-            $(".next_btn").click(function(){
-                thisad++;
-//                console.log(thisad);
-                if(thisad == mypic.length){
-                    thisad = 0;
-                }
-                clearInterval(timer);
-                showImg(thisad);
-                timer = setInterval(autoplay,2000);
-            });
-
-            $(".previous_btn").click(function(){
-                thisad--;
-//                console.log(thisad);
-                if(thisad == 0){
-                    thisad = mypic.length-1;
-                }
-                clearInterval(timer);
-                showImg(thisad);
-                timer = setInterval(autoplay,2000);
-            });
-
-            function autoplay(){
-                thisad++;
-                if(thisad == mypic.length){
-                    thisad = 0;
-                }
-                showImg(thisad);
-            }
-
-            function showImg( idx ){
-                $('.adbanner').attr("src",mypic[idx]);
-            }
-//            $(".register_btn").mouseenter(function(){
-//                $(this).css("display","none");
-//                $(this).value="register";
-//                $(".register_btn").css("background-color","yellow");
-//            });
-//            $(".register_btn").mouseleave(function(){
-//                $(this).value="";
-//                $(this).css("display","inline-block");
-        })
-    </script>
-<!--滚动条-->
+    <!--///////////////////////////////////////////////bottom滚动条js-->
     <script type="text/javascript">
         <!--bottom滚动条js-->
         var area = document.getElementById('noticeBox');
@@ -291,17 +224,6 @@
             myScroll = setInterval("scrollUp()",speed);
         }
     </script>
-    <!--google map-->
-    <script>
-        function initialize() {
-    var mapProp = {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-    };
-    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+
 </body>
 </html>

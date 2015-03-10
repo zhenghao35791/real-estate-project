@@ -457,7 +457,7 @@ ul,li {
     list-style-type:none;
     list-style-position:outside;
     margin:20px 0 0 220px;
-    border: solid 5px grey;
+    border: solid 5px #262E52;
     opacity: 0.8;
     -moz-box-shadow:3px 3px 4px #000;
     -webkit-box-shadow:3px 3px 4px #000;
