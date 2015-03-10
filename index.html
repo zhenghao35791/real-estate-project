@@ -6,6 +6,8 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <!--<link type="text/css" href="css/hover.css" rel="stylesheet">-->
     <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
 </head>
 <body>
     <div class = "headBar_client">
@@ -16,7 +18,7 @@
             <div class = "topBar_right">
                 <div id="login-area">
                     <input type="button" class="register_btn" name="register" value="register">
-                    <input type="button" class="register_btn" name="login" value="login"/>
+                    <input type="button" class="register_btn" name="login" value="login">
                 </div>
             </div>
 
@@ -34,48 +36,38 @@
 
     <div id="menu">
         <ul id="nav" class="clearfix">
-            <li class="mainlevel nav_home"><a href="">HOME</a></li>
+            <li class="mainlevel nav_home"><a href="" style="color: #E90C72">HOME</a></li>
             <li class="mainlevel" id="mainlevel_01"><a href="#">BUYING</a>
                 <ul class="sub_nav_01">
-                    <li><a href="#">Development</a></li>
-                    <li><a href="#">JQuery</a></li>
-                    <li><a href="#">HTML</a></li>
+                    <li><a href="#" class="hvr-sweep-to-right">Development</a></li>
+                    <li><a href="#" class="hvr-sweep-to-right">JQuery</a></li>
+                    <li><a href="#"class="hvr-sweep-to-right">HTML</a></li>
                 </ul>
             </li>
             <li class="mainlevel" id="mainlevel_02"><a href="#">SELLING</a>
                 <ul class="sub_nav_01">
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">JQuery</a></li>
-                    <li><a href="#">HTML</a></li>
+                    <li><a href="#"class="hvr-sweep-to-right">JavaScript</a></li>
+                    <li><a href="#"class="hvr-sweep-to-right">JQuery</a></li>
+                    <li><a href="#"class="hvr-sweep-to-right">HTML</a></li>
                 </ul>
             </li>
             <li class="mainlevel"><a href="#">RENTING</a>
                 <ul class="sub_nav_01">
-                    <li><a href="#">Development</a></li>
-                    <li><a href="#">JQuery</a></li>
-                    <li><a href="#">HTML</a></li>
+                    <li><a href="#"class="hvr-sweep-to-right">Development</a></li>
+                    <li><a href="#"class="hvr-sweep-to-right">JQuery</a></li>
+                    <li><a href="#"class="hvr-sweep-to-right">HTML</a></li>
                 </ul>
             </li>
             <li class="mainlevel"><a href="#">TEAM</a>
                 <ul class="sub_nav_01">
-                    <li><a href="#">Development</a></li>
-                    <li><a href="#">JQuery</a></li>
-                    <li><a href="#">HTML</a></li>
+                    <li><a href="#"class="hvr-sweep-to-right">Development</a></li>
+                    <li><a href="#"class="hvr-sweep-to-right">JQuery</a></li>
+                    <li><a href="#"class="hvr-sweep-to-right">HTML</a></li>
                 </ul>
             </li>
-            <li class="mainlevel"><a href="#">ABOUT US</a>
-                <ul class="sub_nav_01">
-                    <li><a href="#">Development</a></li>
-                    <li><a href="#">JQuery</a></li>
-                    <li><a href="#">HTML</a></li>
-                </ul>
+            <li class="mainlevel"><a href="about-us.html">ABOUT US</a>
             </li>
-            <li class="mainlevel"><a href="#">CONTACT US</a>
-                <ul class="sub_nav_01">
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">JQuery</a></li>
-                    <li><a href="#">HTML</a></li>
-                </ul>
+            <li class="mainlevel"><a href="contact-us.html">CONTACT US</a>
             </li>
 
         </ul>
@@ -91,14 +83,14 @@
                 <img src="images/banner/ad1.jpg" class="adbanner"/>
             </a>
             <!--two buttons on the banner-->
-            <div class="banner_btns">
-                <a href="" class="previous_btn">P</a>
-                <a href="" class="next_btn">N</a>
+            <div class="banner_btns"></div>
+                <input type="button"  class="previous_btn" id="previous_btn" name="previous_btn">
+                <input type="button"  class="next_btn" id="next_btn" name="next_btn" >
             </div>
         </div>
     </div>
 
-    <div class="products_part ">
+    <div class="products_part clearfix">
         <div product_list>
             <div class="product" id="product1">
                 <img src="images/product_1.png">
@@ -134,6 +126,87 @@
 
         </div>
     </div>
+    <!--  公告开始 -->
+    <div class="gernal_info clearfix">
+        <div  id="notice">
+            <!--  头部 -->
+            <h3 id="noticeTitle">New Properties<a href="#" target="_self"class="hvr-wobble-skew">More >></a> </h3>
+            <!--  头部结束 -->
+            <!--  中间 -->
+            <div  id="noticeBox">
+                <ul id="con1">
+                    <li><a href="#" class="hvr-bounce-in">&hearts;&nbsp;3 suther road(For Sale)</a><span>2015-02-6</span></li>
+                    <li><a href="#" class="hvr-bounce-in">&hearts;&nbsp;43 baler str(For Lease)</a><span>2015-02-6</span></li>
+                    <li><a href="#" class="hvr-bounce-in">&hearts;&nbsp;979 swanson road(For Sale)</a><span>2015-02-7</span></li>
+                    <li><a href="#" class="hvr-bounce-in">&hearts;&nbsp;23 bourke str(For Lease)</a><span>2015-02-6</span></li>
+                    <li><a href="#" class="hvr-bounce-in">&hearts;&nbsp;46 king road(For Sale)</a><span>2015-02-7</span></li>
+                    <li><a href="#" class="hvr-bounce-in">&hearts;&nbsp;79 queen str(For Lease)</a><span>2015-02-6</span></li>
+                    <li><a href="#" class="hvr-bounce-in">&hearts;&nbsp;12 russel road(For Sale)</a><span>2015-02-7</span></li>
+                </ul>
+                <ul id="con2">
+                </ul>
+            </div>
+            <!--  中间结束 -->
+        </div>
+        <!--  公告结束 -->
+        <!--office信息-->
+        <div id="notice"style="float: left;margin-left:10px">
+            <h3 id="noticeTitle">Office contact details<a href="#" target="_self" class="hvr-wobble-skew">More >></a> </h3>
+            <div  id="noticeBox">
+                <!--<div id="googleMap"></div>-->
+                <p class="officeInfo_p">Address:  Suite 12/24 Kingsley Street Elwood VIC 3184<br/></p>
+
+                <p class="officeInfo_p">PO BOX 12405 A’Beckett Street Melbourne VIC 8006</p>
+                <a class="officeInfo_a hvr-wobble-skew" href="contact%20us.html">Contact US</a>
+            </div>
+
+        </div>
+    </div>
+        <!--bottom logo条-->
+<div class="bottom_logo clearfix">
+    <img src="images/bottom_logo.png">
+</div>
+
+
+<div class="copyright clearfix">
+    <div class="copyright_dialog clearfix">
+        <ul>
+            <li class="copyright_head" style="color: #ffffff;line-height: 20px">© Copyright 2015</li>
+            <li style="color: #ffffff;padding-left:17px"><a href="#" class="hvr-wobble-horizontal">By HaoZheng</a></li>
+            <li style="padding-left:17px"><a href="#" class="hvr-wobble-bottom">Terms</a></li>
+        </ul>
+       <ul>
+           <li class="copyright_head hvr-wobble-horizontal"><a href="#">Buy</a></li>
+           <li><a href="#" class="hvr-wobble-bottom">Open for inspection</a></li>
+           <li><a href="#" class="hvr-wobble-bottom">Sales</a></li>
+       </ul>
+        <ul>
+            <li class="copyright_head hvr-wobble-horizontal"><a href="#">Selling</a></li>
+            <li><a href="#" class="hvr-wobble-bottom">Selling with us</a></li>
+            <li><a href="#" class="hvr-wobble-bottom">Sold properties</a></li>
+            <li><a href="#" class="hvr-wobble-bottom">Area Sold</a></li>
+        </ul>
+        <ul>
+            <li class="copyright_head hvr-wobble-horizontal"><a href="#">Renting</a></li>
+            <li><a href="#" class="hvr-wobble-bottom">Rent</a></li>
+            <li><a href="#" class="hvr-wobble-bottom">Landlord Services</a></li>
+            <li><a href="#" class="hvr-wobble-bottom">Urgent Repairs</a></li>
+        </ul>
+        <ul>
+            <li class="copyright_head hvr-wobble-horizontal"><a href="#">About Us</a></li>
+            <li class="copyright_head hvr-wobble-horizontal"><a href="#">Our Team</a></li>
+            <li class="copyright_head hvr-wobble-horizontal"><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
 
     <script language="javascript" type="text/javascript">
         $(document).ready(function () {
@@ -148,21 +221,35 @@
 
     <script language="javascript" type="text/javascript">
         $(document).ready(function () {
-            var mypic =  ["images/banner/ad1.jpg","images/banner/ad2.jpg","images/banner/ad3.jpg","images/banner/ad4.jpg"];
+            var mypic =  ["images/banner/ad1.jpg","images/banner/ad2.jpg","images/banner/ad3.jpg","images/banner/ad4.jpg","images/banner/ad5.jpg"];
             var thisad = 0;
             var timer = null;
             timer = setInterval(autoplay,2000);
 
-//            $('.previous_btn').bind("click", function (){
-//                console.log("click");
-//                console.log(mypic.length);
-//                thisad++;
+            $(".next_btn").click(function(){
+                thisad++;
 //                console.log(thisad);
-//                if(thisad == mypic.length){
-//                    thisad = 0;
-//                }
-//                showImg(thisad);
-//            });
+                if(thisad == mypic.length){
+                    thisad = 0;
+                }
+                clearInterval(timer);
+                showImg(thisad);
+                timer = setInterval(autoplay,2000);
+            });
+
+            $(".previous_btn").click(function(){
+                thisad--;
+//                console.log(thisad);
+                if(thisad == 0){
+                    thisad = mypic.length-1;
+                }
+                clearInterval(timer);
+                showImg(thisad);
+                timer = setInterval(autoplay,2000);
+            });
+
+
+
 
 
             function autoplay(){
@@ -177,6 +264,42 @@
                 $('.adbanner').attr("src",mypic[idx]);
             }
         })
+    </script>
+<!--滚动条-->
+    <script type="text/javascript">
+        <!--bottom滚动条js-->
+        var area = document.getElementById('noticeBox');
+        var con1 = document.getElementById('con1');
+        var con2 = document.getElementById('con2');
+        var speed = 50;
+        area.scrollTop = 0;
+        con2.innerHTML = con1.innerHTML;
+        function scrollUp(){
+            if(area.scrollTop >= con1.scrollHeight) {
+                area.scrollTop = 0;
+            }else{
+                area.scrollTop ++;
+            }
+        }
+        var myScroll = setInterval("scrollUp()",speed);
+        area.onmouseover = function(){
+            clearInterval(myScroll);
+        }
+        area.onmouseout = function(){
+            myScroll = setInterval("scrollUp()",speed);
+        }
+    </script>
+    <!--google map-->
+    <script>
+        function initialize() {
+    var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 </body>
 </html>
