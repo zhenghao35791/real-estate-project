@@ -592,6 +592,52 @@ button.submit:active {
 }
 /*//////////////////end of contact us.html*/
 
+/*//////////////////buying.html products*/
+.prop_list{
+    font-size: 14px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    text-decoration: none;
+}
+.prop{
+    width:600px;
+    float: left;
+    margin: 10px 6px 10px 6px;
+    display: inline-block;
+    /*border: solid 1px grey;*/
+}
+.prop img{
+    width: 600px;
+    height:450px;
+    /*float: left;*/
+    border: 0;
+}
+.prop a{
+    padding-top: -100px;
+    z-index: 1;
+    font-weight: bold;
+    width: 600px;
+    height: 90px;
+    line-height: 30px;
+    /*float: left;*/
+    text-decoration: none;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #262E52;
+    opacity: 0.3;
+    border: 0;
+}
+.prop a:hover{
+    /*opacity: 0.85;*/
+    color: #E90C72;
+    background-color: #262E52;
+    font-weight: bold;
+    opacity: 1;
+
+}
+.product a span{
+    padding-left: 10px;
+}
 
 
 
