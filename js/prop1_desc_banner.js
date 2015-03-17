@@ -1,11 +1,11 @@
 //<!--//////////////////////////////////////////banner 轮播广告-->
 $(document).ready(function () {
-    var mypic =  ["images/newest_property/prop1.png",
-        "images/buying/prop1_desc/prop_desc1.png",
-        "images/buying/prop1_desc/prop_desc2.png",
-        "images/buying/prop1_desc/prop_desc3.png",
-        "images/buying/prop1_desc/prop_desc4.png",
-        "images/buying/prop1_desc/prop_desc5.png"
+    var mypic =  ["../images/newest_property/prop1.png",
+        "../images/buying/prop1_desc/prop_desc1.png",
+        "../images/buying/prop1_desc/prop_desc2.png",
+        "../images/buying/prop1_desc/prop_desc3.png",
+        "../images/buying/prop1_desc/prop_desc4.png",
+        "../images/buying/prop1_desc/prop_desc5.png"
     ];
     var thisad = 0;
     var timer = null;
