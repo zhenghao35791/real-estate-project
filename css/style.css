@@ -817,7 +817,38 @@ button.submit:active {
 
 
 }
-
+.selling_product_image1{
+    height: 200px;
+    width: 200px;
+    float: left;
+    background: url(../images/rent/rent1.png) center no-repeat;
+    margin-right: 40px;
+}
+.selling_product_image2{
+    height: 200px;
+    width: 200px;
+    float: left;
+    background: url(../images/rent/rent2.png) center no-repeat;
+    margin-right: 40px;
+}
+.selling_product_image3{
+    height: 200px;
+    width: 200px;
+    float: left;
+    background: url(../images/rent/rent3.png) center no-repeat;
+    margin-right: 40px;
+}
+.selling_product_title:hover ,.selling_product_title_last:hover{
+    background-color:#E90C72;
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+.selling_product_about:hover, .selling_product_status:hover{
+    background-color:black;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    /*text-decoration: line-through;*/
+}
 
 
 
